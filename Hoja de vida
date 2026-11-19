@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="titulo-seccion">Hablemos <span class="resaltado">✉️</span></h1>
+      <p class="subtitulo">¿Tienes una oferta, un proyecto o una pregunta? Déjame un mensaje y te responderé pronto.</p>
+
+      <div class="contacto-rejilla">
+        <aside class="tarjeta">
+          <h3>Datos de contacto</h3>
+          <br>
+          <div class="dato-contacto"><div class="icono fondo-coral">📧</div><a href="mailto:danespira@gmail.com">danespira@gmail.com</a></div>
+          <div class="dato-contacto"><div class="icono fondo-lila">📱</div><a href="tel:+573164105670">(316) 410-5670</a></div>
+          <div class="dato-contacto"><div class="icono fondo-menta">📍</div><span>Bogotá, Colombia</span></div>
+          <div class="dato-contacto"><div class="icono fondo-sol">🎓</div><span>Fundación Universitaria Compensar</span></div>
+        </aside>
+
+        <!-- Formulario: envía los datos con el método GET a gracias.html -->
+        <form id="form-contacto" class="tarjeta formulario" action="gracias.html" method="get" novalidate>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <span class="error" id="error-nombre"></span>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+          <span class="error" id="error-correo"></span>
+
+          <label for="motivo">Motivo</label>
+          <select id="motivo" name="motivo">
+            <option value="Oferta laboral">Oferta laboral</option>
+            <option value="Proyecto">Proyecto</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          <span class="error" id="error-mensaje"></span>
+
+          <button type="submit" class="boton boton-primario">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | Experiencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="seccion">
+      <h1 class="titulo-seccion">Experiencia <span class="resaltado">laboral</span></h1>
+      <p class="subtitulo">Trabajos donde desarrollé disciplina, servicio al cliente y trabajo bajo presión, habilidades que hoy aplico en mis proyectos de software.</p>
+
+      <div class="linea-tiempo">
+        <div class="evento aparecer visible">
+          <article class="tarjeta">
+            <span class="etiqueta">🏭 PlasticPlanet &middot; Bogotá &middot; 1 año</span>
+            <h3>Operario de Producción</h3>
+            <p>Encargado del <strong>sellado y empaquetado de bolsas biodegradables</strong>.</p>
+            <ul>
+              <li>Cumplimiento de metas de producción.</li>
+              <li>Control de calidad del producto empacado.</li>
+              <li>Trabajo coordinado con el equipo de planta.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="evento aparecer visible">
+          <article class="tarjeta">
+            <span class="etiqueta">🍽️ Parrilla del Mar &middot; Bogotá</span>
+            <h3>Auxiliar Integral del Restaurante</h3>
+            <p>Encargado de la <strong>preparación de alimentos</strong>, toma de pedidos, <em>atención al cliente</em> e inventario.</p>
+            <ul>
+              <li>Preparación de alimentos.</li>
+              <li>Toma de pedidos y atención al cliente.</li>
+              <li>Control de inventario.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="evento aparecer visible">
+          <article class="tarjeta">
+            <span class="etiqueta">🎬 Jack SAS</span>
+            <h3>Auxiliar de Servicio y Atención en Eventos de Producción</h3>
+            <p>Apoyo logístico y de servicio en <strong>producciones de televisión</strong>.</p>
+            <ul>
+              <li>Montaje y desmontaje de equipos.</li>
+              <li>Apoyo en la organización y distribución del catering.</li>
+              <li>Servicio de catering para producciones de televisión.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Proyectos académicos</h2>
+      <p class="subtitulo">Algunos trabajos realizados durante la carrera.</p>
+      <div class="tabla-envoltura">
+        <table>
+          <thead>
+            <tr><th>Proyecto</th><th>Tecnologías</th><th>Descripción</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Juego Memorama</td><td>Java, Swing, NetBeans</td><td>Juego de memoria con menú principal e interfaz gráfica.</td></tr>
+            <tr><td>Réplica de la página del programa</td><td>HTML, CSS, JavaScript</td><td>Maquetación de la página de Ingeniería de Software de UCompensar.</td></tr>
+            <tr><td>Plan de pruebas GymManager Pro</td><td>Pruebas de software</td><td>Plan de pruebas, casos de prueba y reportes de defectos.</td></tr>
+            <tr><td>Alumbrado público automático</td><td>Sensor LDR, relé, LED</td><td>Maqueta de una calle cuyas luces se encienden al oscurecer.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez &middot; <a href="contacto.html">¿Hablamos?</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | Formación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="seccion">
+      <h1 class="titulo-seccion">Formación <span class="resaltado">académica</span></h1>
+      <p class="subtitulo">Mi camino de estudio y las certificaciones que respaldan mis conocimientos.</p>
+
+      <div class="rejilla">
+        <article class="tarjeta">
+          <div class="icono fondo-menta">🎓</div>
+          <span class="etiqueta">En curso</span>
+          <h3>Ingeniería de Software</h3>
+          <p>Fundación Universitaria Compensar &middot; Bogotá, Colombia.</p>
+          <ul>
+            <li>Algoritmos y programación en Java</li>
+            <li>Bases de datos</li>
+            <li>Pruebas de software</li>
+            <li>Lenguajes de Internet</li>
+          </ul>
+        </article>
+        <article class="tarjeta">
+          <div class="icono fondo-sol">📚</div>
+          <span class="etiqueta">Aprendizaje continuo</span>
+          <h3>Formación complementaria</h3>
+          <p>Cursos virtuales en programación, bases de datos, cálculo numérico con MATLAB y habilidades para el empleo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Educación básica y media</h2>
+      <div class="tabla-envoltura">
+        <table>
+          <thead>
+            <tr><th>Nivel</th><th>Institución</th><th>Desempeño</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Primaria</td><td>Gimnasio San Valery</td><td>Sobresaliente</td></tr>
+            <tr><td>Bachiller</td><td>Colegio del Santísimo Sacramento</td><td>Alto</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Certificaciones</h2>
+      <div class="tabla-envoltura">
+        <table>
+          <caption>Tabla de certificaciones obtenidas</caption>
+          <thead>
+            <tr><th>Certificación</th><th>Entidad</th><th>Área</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Java Foundations</td><td>Oracle Academy</td><td>Programación</td></tr>
+            <tr><td>Database Foundations</td><td>Oracle Academy</td><td>Bases de datos</td></tr>
+            <tr><td>Derecho de autor sobre software</td><td><abbr title="Dirección Nacional de Derecho de Autor">DNDA</abbr></td><td>Propiedad intelectual</td></tr>
+            <tr><td>Habilidades para la empleabilidad</td><td>Fundación Telefónica Movistar</td><td>Habilidades blandas</td></tr>
+            <tr><td>Curso de MATLAB (2 cursos)</td><td>MathWorks</td><td>Computación científica</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Herramientas que uso</h2>
+      <div class="rejilla">
+        <div class="tarjeta"><h3>☕ NetBeans</h3><p>Desarrollo en Java y Swing.</p></div>
+        <div class="tarjeta"><h3>🧩 VS Code</h3><p>HTML, CSS y JavaScript con Live Server.</p></div>
+        <div class="tarjeta"><h3>🐙 Git y GitHub</h3><p>Control de versiones y publicación de este sitio.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez &middot; <a href="contacto.html">¿Hablamos?</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | ¡Gracias!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="titulo-seccion">¡Gracias, <span class="resaltado" id="nombre-visitante">visitante</span>! 🎉</h1>
+      <p class="subtitulo">Tu mensaje fue recibido. Estos son los datos que llegaron a esta página por el método <strong>GET</strong> (puedes verlos también en la barra de direcciones):</p>
+      <div class="tabla-envoltura">
+        <table>
+          <thead><tr><th>Campo</th><th>Valor</th></tr></thead>
+          <tbody id="resumen-envio">
+            <tr><td colspan="2">No se recibieron datos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="botones">
+        <a href="index.html" class="boton boton-primario">Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de vida de Daniel Esteban Pirazan Velasquez, estudiante de Ingeniería de Software.">
+  <title>Daniel Pirazan | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado con la navegación entre páginas -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <!-- Portada -->
+    <section class="hero">
+      <div>
+        <span class="saludo">👋 ¡Hola! Bienvenido a mi hoja de vida</span>
+        <h1>Soy <span class="resaltado">Daniel Pirazan</span>, y me gusta construir <span class="palabra-cambiante">software</span></h1>
+        <p>Estudiante de <strong>Ingeniería de Software</strong> en la Fundación Universitaria Compensar, en Bogotá. Trabajo con <em>Java</em>, <em>SQL</em> y <em>MATLAB</em>, y ahora también con HTML, CSS y JavaScript.</p>
+        <div class="botones">
+          <a href="experiencia.html" class="boton boton-primario">Ver mi experiencia</a>
+          <a href="contacto.html" class="boton boton-secundario">Contáctame</a>
+        </div>
+      </div>
+      <div class="avatar-marco">
+        <img src="img/avatar.svg" alt="Ilustración de Daniel con su portátil">
+        <span class="chip chip-1">☕ Java SE</span>
+        <span class="chip chip-2">🗄️ Oracle SQL</span>
+        <span class="chip chip-3">📊 MATLAB</span>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Sobre mí</h2>
+      <p class="subtitulo">Soy una persona <strong>amable</strong>, con facilidad para comunicarme y conectar con los demás. Me gusta aprender cosas nuevas constantemente y me adapto rápido a diferentes entornos. Disfruto el trabajo en equipo y siempre estoy dispuesto a <em>salir de la zona de confort</em> para enfrentar nuevos retos. Me caracterizo por ser responsable, trabajador y con una actitud positiva frente al aprendizaje y al esfuerzo diario.</p>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <div class="icono fondo-coral">💻</div>
+          <h3>Desarrollo</h3>
+          <p>Programo aplicaciones en <strong>Java</strong> con interfaces gráficas en Swing y me apoyo en NetBeans y VS Code.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono fondo-menta">🗄️</div>
+          <h3>Datos</h3>
+          <p>Diseño consultas y manipulo datos en <strong>SQL / Oracle Database</strong>, con certificación de Oracle Academy.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono fondo-sol">🧪</div>
+          <h3>Calidad</h3>
+          <p>Aplico <mark>técnicas de pruebas de software</mark>: casos de prueba de caja negra y caja blanca.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono fondo-lila">🤝</div>
+          <h3>Trabajo en equipo</h3>
+          <p>Mi experiencia en producción, restaurantes y eventos de televisión me enseñó a comunicarme y a resolver bajo presión.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="seccion aparecer">
+      <h2 class="titulo-seccion">Habilidades técnicas</h2>
+      <p class="subtitulo">Nivel aproximado según los proyectos y cursos que he realizado.</p>
+      <div class="tarjeta">
+        <div class="habilidad">
+          <div class="habilidad-encabezado"><span>Java SE</span><span>80%</span></div>
+          <div class="barra"><div class="barra-relleno" data-nivel="80"></div></div>
+        </div>
+        <div class="habilidad">
+          <div class="habilidad-encabezado"><span>SQL / Oracle Database</span><span>75%</span></div>
+          <div class="barra"><div class="barra-relleno" data-nivel="75"></div></div>
+        </div>
+        <div class="habilidad">
+          <div class="habilidad-encabezado"><span>HTML y CSS</span><span>70%</span></div>
+          <div class="barra"><div class="barra-relleno" data-nivel="70"></div></div>
+        </div>
+        <div class="habilidad">
+          <div class="habilidad-encabezado"><span>MATLAB</span><span>65%</span></div>
+          <div class="barra"><div class="barra-relleno" data-nivel="65"></div></div>
+        </div>
+        <div class="habilidad">
+          <div class="habilidad-encabezado"><span>JavaScript</span><span>55%</span></div>
+          <div class="barra"><div class="barra-relleno" data-nivel="55"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades personales e intereses -->
+    <section class="seccion aparecer">
+      <div class="rejilla">
+        <article class="tarjeta">
+          <div class="icono fondo-menta">⭐</div>
+          <h3>Habilidades personales</h3>
+          <ul>
+            <li>Trabajo en equipo</li>
+            <li>Aprendizaje rápido</li>
+            <li>Multifuncionalidad</li>
+            <li>Servicio al cliente</li>
+            <li>Responsabilidad y compromiso</li>
+            <li>Organización e inventario</li>
+          </ul>
+        </article>
+        <article class="tarjeta">
+          <div class="icono fondo-coral">🎸</div>
+          <h3>Intereses</h3>
+          <ul>
+            <li>Ir al gimnasio 🏋️</li>
+            <li>Tocar guitarra 🎸</li>
+            <li>Estudiar y leer 📖</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez &middot; Hecho con HTML, CSS y JavaScript &middot; Publicado en <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
