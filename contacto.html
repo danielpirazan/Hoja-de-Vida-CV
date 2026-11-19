@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="titulo-seccion">Hablemos <span class="resaltado">✉️</span></h1>
+      <p class="subtitulo">¿Tienes una oferta, un proyecto o una pregunta? Déjame un mensaje y te responderé pronto.</p>
+
+      <div class="contacto-rejilla">
+        <aside class="tarjeta">
+          <h3>Datos de contacto</h3>
+          <br>
+          <div class="dato-contacto"><div class="icono fondo-coral">📧</div><a href="mailto:danespira@gmail.com">danespira@gmail.com</a></div>
+          <div class="dato-contacto"><div class="icono fondo-lila">📱</div><a href="tel:+573164105670">(316) 410-5670</a></div>
+          <div class="dato-contacto"><div class="icono fondo-menta">📍</div><span>Bogotá, Colombia</span></div>
+          <div class="dato-contacto"><div class="icono fondo-sol">🎓</div><span>Fundación Universitaria Compensar</span></div>
+        </aside>
+
+        <!-- Formulario: envía los datos con el método GET a gracias.html -->
+        <form id="form-contacto" class="tarjeta formulario" action="gracias.html" method="get" novalidate>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <span class="error" id="error-nombre"></span>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+          <span class="error" id="error-correo"></span>
+
+          <label for="motivo">Motivo</label>
+          <select id="motivo" name="motivo">
+            <option value="Oferta laboral">Oferta laboral</option>
+            <option value="Proyecto">Proyecto</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          <span class="error" id="error-mensaje"></span>
+
+          <button type="submit" class="boton boton-primario">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

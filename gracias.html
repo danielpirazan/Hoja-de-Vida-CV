@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Pirazan | ¡Gracias!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">daniel<span>.</span>dev</a>
+      <button class="boton-menu" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion">
+      <h1 class="titulo-seccion">¡Gracias, <span class="resaltado" id="nombre-visitante">visitante</span>! 🎉</h1>
+      <p class="subtitulo">Tu mensaje fue recibido. Estos son los datos que llegaron a esta página por el método <strong>GET</strong> (puedes verlos también en la barra de direcciones):</p>
+      <div class="tabla-envoltura">
+        <table>
+          <thead><tr><th>Campo</th><th>Valor</th></tr></thead>
+          <tbody id="resumen-envio">
+            <tr><td colspan="2">No se recibieron datos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="botones">
+        <a href="index.html" class="boton boton-primario">Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Daniel Esteban Pirazan Velasquez</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
